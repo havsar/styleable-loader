@@ -58,7 +58,7 @@ module.exports = {
 |Name|Type|Default|Description|
 |:--:|:--:|:-----:|:----------|
 |`appendedSpecificity`|String|:not(false)|The selector string which is appended to every rule to increase specificity|
-|`fileNameRegex`|Regex|/.*custom\\.styles\.scss/gi|A regex to decide on which files this loade should be applied on|
+|`fileNameRegex`|Regex|/.*custom\\.styles\\.scss/gi|A regex to decide on which files this loade should be applied on|
 
 # Tests
 ```bash
