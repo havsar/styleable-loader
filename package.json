@@ -1,7 +1,7 @@
 {
   "name": "styleable-loader",
   "version": "1.0.0",
-  "description": "Webpack loader used to increase css rules specifity at build time",
+  "description": "Webpack loader used to increase css rules specificity at build time",
   "main": "index.js",
   "dependencies": {
     "css-tree": "^1.0.0-alpha.29"
