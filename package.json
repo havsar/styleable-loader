@@ -1,0 +1,22 @@
+{
+  "name": "styleable-loader",
+  "version": "1.0.0",
+  "description": "Webpack loader used to increase css rules specifity at build time",
+  "main": "index.js",
+  "dependencies": {
+    "css-tree": "^1.0.0-alpha.29"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Himmet Avsar <avsar.himmet1@gmail.com>",
+  "license": "ISC"
+}

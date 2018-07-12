@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header {
+    color: #ffffff;
+    background-color: red;
+  }
+
+  div:not(first-child) {
+    border-bottom: 1px solid black;
+  }
+
+}
