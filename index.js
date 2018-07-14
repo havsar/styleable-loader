@@ -22,6 +22,7 @@ module.exports = function (source) {
         }
     });
 
-    const resultWithHigherSpecifity = CssTree.generate(ast);
-    console.log(resultWithHigherSpecifity);
+    const cssResultWithHigherSpecificity = CssTree.generate(ast);
+    const newModuleSource = source.replace(cssRegex, `module.id, "${cssResultWithHigherSpecificity}`);
+    return newModuleSource;
 };

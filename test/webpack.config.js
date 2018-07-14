@@ -2,17 +2,22 @@ const Path = require('path');
 
 module.exports = {
     entry: [
-        './index.js'
+        './test.js'
     ],
     output: {
-        path: Path.join(__dirname, 'dist'),
+        path: __dirname,
         filename: 'bundle.js'
     },
     resolveLoader: {
-        modules: ['node_modules', './']
+        modules: ['node_modules', '../']
     },
     module: {
         rules: [
+            {
+                test: /\.(js|jsx)$/i,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
+            },
             {
                 test: /\.scss$/,
                 use: [

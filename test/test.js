@@ -1,3 +1,3 @@
-import LoginStyles from './stylings/login.component.styles.scss';
+import LoginStyles from './stylings/login.component.custom.styles.scss';
 
 console.log(LoginStyles);
