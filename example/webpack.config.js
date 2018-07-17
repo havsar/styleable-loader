@@ -1,6 +1,7 @@
 const Path = require('path');
 
 module.exports = {
+    context: __dirname,
     entry: [
         './test.js'
     ],
