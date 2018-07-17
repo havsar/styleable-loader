@@ -10,4 +10,4 @@ coffeelint.json
 .tscache
 **.tmp.txt
 secret.json
-test
+example
