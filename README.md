@@ -8,8 +8,6 @@
 # styleable-loader
 Webpack loader used to increase css rules specificity at build time
 
-**_Note: This module is not ready to use yet!_**
-
 # Install
 ```bash
 npm i -D styleable-loader
