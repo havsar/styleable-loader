@@ -22,7 +22,7 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     'style-loader',
-                    'styleable-loader',
+                    'styleable-loader?appendedSpecificity=.xyz123&fileNameRegex=.*.scss$',
                     'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
                     'sass-loader'
                 ]

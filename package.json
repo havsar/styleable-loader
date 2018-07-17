@@ -4,7 +4,8 @@
   "description": "Webpack loader used to increase css rules specificity at build time",
   "main": "index.js",
   "dependencies": {
-    "css-tree": "^1.0.0-alpha.29"
+    "css-tree": "^1.0.0-alpha.29",
+    "loader-utils": "^1.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

@@ -1,10 +1,18 @@
 const Path = require('path');
 const CssTree = require('css-tree');
+const LoaderUtils = require('loader-utils');
 
 module.exports = function (source) {
-    const fileName = Path.basename(this.resourcePath);
+    const options = {
+        ...{
+            appendedSpecificity: ':not(false)',
+            fileNameRegex: '.*.custom.styles.scss$'
+        },
+        ...LoaderUtils.getOptions(this)
+    };
 
-    if (!fileName.endsWith('custom.styles.scss')) {
+    const fileName = Path.basename(this.resourcePath);
+    if (!(new RegExp(options.fileNameRegex)).test(fileName)) {
         return source;
     }
 
@@ -18,7 +26,7 @@ module.exports = function (source) {
     CssTree.walk(ast, {
         visit: 'Rule',
         enter: (node) => {
-            node.prelude.value += ':not(false)';
+            node.prelude.value += options.appendedSpecificity;
         }
     });
 
